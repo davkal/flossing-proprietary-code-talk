@@ -1,0 +1,78 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{color}
+\usepackage[american]{babel} % Hyph.: german, ngerman, spanish or deactivate for english
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[sorting=none]{biblatex}
+\usepackage{hyperref}
+\bibliography{se_beitraege}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\newcommand*{\annotecite}[1]{\fullcite{#1}\\ {\color{gray}\citefield{#1}{annotation}}}
+
+\hypersetup{colorlinks=true}
+
+\title{FLOSSing proprietary code}
+\subtitle{Seminarbeitrag, Beiträge zum Software Engineering}
+\author{David Kaltschmidt (3782360)}
+
+\begin{document}
+\maketitle
+
+I propose to present two papers on private-collective innovation\footnote{\citeauthor{stuermer2009extending} are using the term \emph{innovation} in the tradition of \textcite[Ch 3.B, p. 83]{schumpeter1939business} as being a new combination of production factors (invention) and its immediate adoption.} 
+where private companies enlist the help of the FLOSS community to build a commercial product. 
+Shared development costs via community contributions as well as boosted organizational learning are obvious benefits. 
+But what are the drawbacks? 
+The second paper focuses on the developer as a link between the company that employs him and the community.
+
+%\annotecite{dabbish2012social}
+
+\section*{\citetitle{stuermer2009extending}}
+\fullcite{stuermer2009extending}
+
+\begin{itemize}
+\item private investment model of innovation vs. investment of resources to create public goods 
+\item characterized by non-rivalry and non-exclusivity in consumption, intellectual property rights are forfeited and the resulting innovation is offered to the public for free
+\item case study of Nokia Internet Tablet shows benefits and costs
+\item study conducted semi-structured interviews, allowing participants the opportunity to narrate stories
+\end{itemize}
+
+\subsection*{Presentation}
+
+\begin{itemize}
+\item introduce private-collective innovation model
+\item previously known benefits when following the model
+\item bring attention to hidden costs
+\item describe study/interviews, why was the product a suitable subject
+\item present findings: benefits, costs, strategies to mitigate costs
+\item provide 2-3 anecdotes from the interviews
+\end{itemize}
+
+
+\section*{\citetitle{henkel2009champions}}
+\fullcite{henkel2009champions}
+
+\begin{itemize}
+\item the link between firms engaging in open source software (OSS) development and the OSS community is established by individual developers 
+\item double allegiance to firm and OSS community
+\item developers expose the firm to the risk of losing intellectual property
+\item study done using interviews and large-scale survey
+\item focus on potential principal-agent problems between developer and employer
+\item biggest problem for companies: the Free Software ideologist
+\end{itemize}
+
+\subsection*{Presentation}
+
+\begin{itemize}
+\item introduce topic, actors, principles (e.g. ``Free Software ideology'')
+\item programmer as bridge between two worlds
+\item bring attention to principal-agent problems (information asymmetry and potentially diverging interests)
+\item describe study/interviews, why was the product a suitable subject
+\item present findings: revealing code may be in firm's best interest, management overestimates the risk and underestimates the benefits of openness
+\item provide 2-3 anecdotes from the interviews
+\end{itemize}
+
+
+\printbibliography[keyword=innovation]
+
+\end{document}  
