@@ -33,9 +33,9 @@ While Apple made this move without any comment, they are not alone in opening up
 
 Nokia started development on the Internet Tablet in 2005. 
 Using a private-collective innovation\footnote{\citeauthor{stuermer2009extending} are using the term \emph{innovation} in the tradition of \textcite[Ch 3.B, p. 83]{schumpeter1939business} as being a new combination of production factors (invention) and its immediate adoption.} model the company enlisted the help of the Free/Libre/Open Source Software (FLOSS) community to build a commercial product. 
-It based the development of this product mainly on opensource software and made a large part of theresearch and product development transparentand accessible as a public goods innovation.Outside contributors involving firms and individuals,unpaid by Nokia, expended a significantamount of private resources on its development.
+It based the development of this product mainly on open source software and made a large part of the research and product development transparent and accessible as a public goods innovation.Outside contributors involving firms and individuals, unpaid by Nokia, expended a significantamount of private resources on its development.
 
-\section{First paper: \citetitle{stuermer2009extending}}
+\section{Paper: \citetitle{stuermer2009extending}}
 
 Since the Nokia Internet Tablet was being developed using both proprietary as well as open source software it is a case in point. 
 \citeauthor{stuermer2009extending} picked it as the subject of an empirical study on the incentives and costs of the private-collective model of innovation.
@@ -89,7 +89,7 @@ Only Nokia employees and some Maemo developers are allowed to contribute to the 
 The garage part is open to the community and registered developers can distribute their software through it.
 
 
-\subsection{Benefits and cost of the application of the private-collective innovation model in the Nokia case}
+\subsection{Benefits of the application of the private-collective innovation model in the Nokia case}
 
 The study revealed the following benefits which are in concordance to the findings of another study\cite{von2009open}.
 
@@ -127,13 +127,16 @@ Nokia recognized his contributions and hired him.
 \paragraph{Widespread adoption}
 The public availability of the innovation can lead to a fast and wide adoption, accelerated by network effects that may establish a dominant design.
 Since Nokia based its platform on widely used open source projects, contributors to these projects had no entry barrier to participate in the development of applications for the tablet.
-When Nokia invited other companies to use its platform Intel joined and used the tablets UI framework for their line of mobile devices.
+
+When Nokia invited other companies to use its platform Intel joined and used the tablet's UI framework for their line of mobile devices.
+Even before that Nokia's efforts resulted in the creation of the GNOME Embedded Platform that can be reused and improved by others.
+
 
 \paragraph{Lower cost of innovation}
 Free access to innovations may incentivize a manufacturer to produce an item cheaper or to produce it with a higher quality, benefitting all consumers.
 Nokia helped create a solid and cheap operating system for mobile devices that can be used by other manufacturers.
-Here too, a leverage effect materializes.
-When, for example, Nokia pays a kernel developer to work on a problem, a solution may be found by collaborating with other developers who may be sponsored by other companies.
+Here too, a leverage effect materialized.
+When, for example, Nokia pays a kernel developer to work on a problem, a solution may be found by collaborating with other developers who may be sponsored by other companies like IBM.
 
 In the case of the Internet Tablet, an army of volunteers contributed in a variety of ways.
 In addition to application development, they filed bug reports, fixed the bugs and testes various peripheral equipment.
@@ -143,56 +146,101 @@ Nokia regarded the application development as especially important because a suc
 Reuse by others invites further contributions which can improve the innovation and lower the cost of its creation.
 The quality of the own code can be raised and other existing technology from the community can be reused.
 For Nokia this translated into reduced fixed cost as they did not have to develop all of the technology by their own research and development team.
-Even essential application like a mapping and navigation software were provided by the community. 
+
+Furthermore, even essential applications like a mapping and navigation software were provided by the community. 
 The use of the Maemo platform for the tablet also meant that no per-device license fees had to be paid by Nokia.\footnote{If on the other hand Nokia had chosen SymbianOS as the operating system for its devices, a royalty of \$7.50 per device sold would have to be paid.}
 
-Note: While the use of software that has been released under a copyleft license may lower the cost of innovation it may force the firm to contribute to public goods innovations.
+Note: While the use of software that has been released under a copyleft license may lower the cost of innovation it may force the firm to contribute to public goods innovations (see also \emph{Losing business secrets} and \emph{Organizational inertia} below).
 
 \paragraph{Faster time-to-market}
-The use of modular open source software allowed Nokia to develop an operating system in a short time. 
+The use of modular open source software allowed Nokia to develop an operating system in a short time.\footnote{At the time of product launch, neither a product category nor a market for the tablet existed.}
 The faster development allowed for shorter release cycles.
 Each release of the software allowed Nokia to get feedback on its recent changes.
-At the same time the integration of different open source packages into one software proved challenging. 
+
+By collaborating with outside volunteers and contributors Nokia acted as a system integrator coordinating a loosely coupled network of component providers.
+However, sometimes the integration of different open source packages into one software proved challenging. 
 Nokia solved this problem by contracting open source developers or small firms to integrate the software. 
 
-\todo{Biggest benefit by?}
-
-\subsection{The hidden costs}
+\subsection{The costs}
 
 Obvious costs include the labor that went into all contributions to the innovation originating from the private company as well as the forfeit of intellectual property rights.
 Several studies uncovered hidden costs which, like the benefits, apply only to some types of innovation:
 
-\paragraph{Technological dependency}
-Cost of production increases with increasing dependency on external sources of technology.
+\paragraph{Lack of differentiation}
+A competitor can easily devise a product with the same purpose, base the architecture on the same open source projects and reuse the communities adaptations and improvements.
+To that competitor Nokia is part of the community. 
+This approach can be taken to the extreme when also the closed parts of Nokia's software are reverse-engineered and imitated, in effect, creating a clone.
+The cost hereby is the dwindling competitive advantage and lost sales as these replica products cannibalize each other in the market.
 
-\paragraph{Rapid product launches}
-Rapid development encourages shorter release cycles.
-Firms often find that the rapid launching of products that have not been properly tested leadsto costly recalls.
+However, the above mentioned reuse is legal, and Nokia itself followed this approach.
+To limit the impact, Nokia revealed only the middle part of the software stack under an open source license.
+The lowest layer, the hardware-specific part, needed adaptation to Nokia's hardware, whereas the top user interface needed to retain a Nokia look and feel. 
+These were kept under a proprietary license.
+In the interviews the community developers recognized this decision and signaled their understanding.
+
+\paragraph{Losing business secrets}
+Apart from business figures such as investments and numbers of sold devices it is difficult to determine what constitutes a secret that would have a value to a competitor.
+As Nokia's application of the private-collective innovation model was concerned with software development, only knowledge in the form of source code was shared.
+At the same time, development was spread among small firms who usually had to sign a non-disclosure agreement (NDA).
+Some motivated volunteers were even asked to sign an NDA or were simply hired by Nokia.
+
+\paragraph{Lowering community entry barriers}
+Nokia invested in the development of a Software Development Kit (SDK) that would help people inside and outside the company to get started quickly. 
+To maximize participation, Nokia gave the SDK for free and provided the developers with upcoming platform releases.
+
+Nokia also hired community organizers to act as the bridge between the internal developers and the external community members. 
+They organized conferences where volunteers could learn about the technology.
+At the same time, Nokia offered away heavily subsidized tablets to very active community members.
+These were all real costs and could not have been mitigated. 
+However these investments lowered future costs by increased participation, better knowledge diffusion and the mentoring of new community members both online and at the conferences.
+
+\paragraph{Giving up control}
+The cost of production increases with increasing dependency on external sources of technology.
+Choosing open source projects for the core of one's product means giving up control over the direction of the development.
+In the case of Nokia and GTK the firm invested heavily in efforts to make the the toolkit more mobile friendly, i.e. less resource hungry.
+According to the interviewees, Nokia's improvements and modifications paired with its respect for the meritocratic organization of the project gave it enough influence on the development.
+It should be noted that some community members remained wary of Nokia's contracting of  project contributors lest losing control on the community's side.
+
+Two other events created extra tension.
+When Nokia decided to give write access to its repositories only to its employees, community developers felt excluded.
+This also meant that when valuable contributions to the open source projects were made \emph{upstream}\footnote{These contributions were also more numerous for usually a larger group of developers works on the original open source project.}, contributors had to wait until a Nokia employee applied these patches.
+This was mild compared to the community outcry\footnote{A common threat by the community is  forking, i.e. continuing main development in a newly created branch with newly stated goals, in effect competing with the original project.} when Nokia released version 4 of the Maemo platform only in binary format.
+Hinting at legal issues with the release, Nokia released the source code a few weeks later.
+
+\paragraph{Organizational inertia}
+The Internet Tablet included software written by third-party vendors.
+Therefor Nokia had to ensure not to infringe any intellectual property rights when releasing the Maemo platform.
+Every release has to go through a reportedly slow and bureaucratic review process.
+The complex internal processes of a multinational corporation can make it difficult to work with a highly dynamic community.
+
+Secondly, some parts of the infrastructure like the bug tracker had to be duplicated since outsiders were not allowed access to Nokia's company network.
+At the same time, Nokia employees, blocked by the company's firewall could not access the Maemo developer IRC channel.
 
 
-\subsection{Findings}
+\subsection{Summary}
 
+Nokia launched the Internet Tablet as a private-collective innovation project and as a lowcost probe.
+Rather than following existing market demand, Nokia targeted technology pioneers to find out who would use the Internet Tablet and how it would be used in real-life applications.
+Nokia opened up the product’s software using externally developed open source technologies, allowed for and encouraged contributions by outsiders, and in the process created a new market for a product it had envisioned.
 
-\begin{itemize}
-\item private investment model of innovation vs. investment of resources to create public goods 
-\item characterized by non-rivalry and non-exclusivity in consumption, intellectual property rights are forfeited and the resulting innovation is offered to the public for free
-\item case study of Nokia Internet Tablet shows benefits and costs
-\item study conducted semi-structured interviews, allowing participants the opportunity to narrate stories
-\end{itemize}
+In my opinion, the biggest benefit seemed to have been the positive reputation gain by being labeled ``open source friendly''.
+This attracted developers who contributed to the platform, helped it grow and become increasingly appealing to other developers.
+Together with the lower development cost that comes with the reuse of software components, this is the only way Nokia could have accomplished this at such a low cost.
 
-\subsection*{Presentation}
+For a company as big as Nokia, the most important hidden cost was probably caused by the organizational inertia.
+Its internal time-consuming processes simply proved inadequate to collaborate with a very flexible community, resulting in frustration on both sides. 
+This very fact makes me wonder how a much smaller company would have performed if they had set out to buy the hardware device from a manufacturer and develop the software for it. 
 
-\begin{itemize}
-\item introduce private-collective innovation model
-\item previously known benefits when following the model
-\item bring attention to hidden costs
-\item describe study/interviews, why was the product a suitable subject
-\item present findings: benefits, costs, strategies to mitigate costs
-\item provide 2-3 anecdotes from the interviews
-\end{itemize}
+Overall, the private-collective innovation model was attractive to Nokia as it kept development costs low, enabled external contributions and boosted organizational learning.
+On balance, the benefits seemed to have outweighed the costs as one interviewee summarizes:
 
+\begin{quotation}
+Some people might say that one of the problemsis that you are leaking and giving outyour secrets and so forth, but it’s more like atrade-off. What is more important to you: togive some of your secrets an internal work-outor how much help in creating these productsyou get for free. I think, if you calculate, youare far more on the positive side when youdecide to share.
+\end{quotation}
 
-\section*{\citetitle{henkel2009champions}}
+On a side note, it is sad that the transcripts of the study's interviews are not available. Interesting questions to a Nokia manager included ``When do you do things internally?'' and  ``When do you decide to pay somebody for a certain development effort?''.
+
+\section{Paper: \citetitle{henkel2009champions}}
 \fullcite{henkel2009champions}
 
 \begin{itemize}
@@ -204,15 +252,21 @@ Firms often find that the rapid launching of products that have not been properl
 \item biggest problem for companies: the Free Software ideologist
 \end{itemize}
 
-\subsection*{Presentation}
+\section{Presentation}
+
+The presentation will follow the outline of this document by using the development of the tablet as a story thread.
 
 \begin{itemize}
+\item introducing the tablet
+\item introduce innovation models
+\item describe study/interviews, why was the Internet Tablet development a case in point
+\item present benefits, costs, strategies to mitigate costs, peppered with anecdotes from the tablet development
+\item sum up how the application of the model worked out for Nokia
+\item wonderings about detailed answers to questions about the internal/external collaboration lead to the second paper: the individual programmer as bridge between two worlds
 \item introduce topic, actors, principles (e.g. ``Free Software ideology'')
-\item programmer as bridge between two worlds
 \item bring attention to principal-agent problems (information asymmetry and potentially diverging interests)
 \item describe study/interviews, why was the product a suitable subject
 \item present findings: revealing code may be in firm's best interest, management overestimates the risk and underestimates the benefits of openness
-\item provide 2-3 anecdotes from the interviews
 \end{itemize}
 
 
