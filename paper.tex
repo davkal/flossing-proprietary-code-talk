@@ -33,9 +33,13 @@ While Apple made this move without any comment, they are not alone in opening up
 
 Nokia started development on the Internet Tablet in 2005. 
 Using a private-collective innovation\footnote{\citeauthor{stuermer2009extending} are using the term \emph{innovation} in the tradition of \textcite[Ch 3.B, p. 83]{schumpeter1939business} as being a new combination of production factors (invention) and its immediate adoption.} model the company enlisted the help of the Free/Libre/Open Source Software (FLOSS) community to build a commercial product. 
-It based the development of this product mainly on open source software and made a large part of the research and product development transparent and accessible as a public goods innovation.Outside contributors involving firms and individuals, unpaid by Nokia, expended a significantamount of private resources on its development.
+It based the development of this product mainly on open source software and made a large part of the research and product development transparent and accessible as a public goods innovation.
+Outside contributors involving firms and individuals, unpaid by Nokia, expended a significant
+amount of private resources on its development.
 
 \section{Paper: \citetitle{stuermer2009extending}}
+
+\todo{\fullcite{stuermer2009extending}}
 
 Since the Nokia Internet Tablet was being developed using both proprietary as well as open source software it is a case in point. 
 \citeauthor{stuermer2009extending} picked it as the subject of an empirical study on the incentives and costs of the private-collective model of innovation.
@@ -46,7 +50,9 @@ For any company or organization an innovation is advanced by an investment or ac
 In the world of technology the first two of the following models of innovation incentives dominate:
 
 \paragraph{Private investment model}
-In a private investment model of innovation, firms use internal processes to create ideas,knowledge, and technologies and commercialize these in the market place. Firms appropriatereturns from private investment in innovation through intellectual property rights. 
+In a private investment model of innovation, firms use internal processes to create ideas,
+knowledge, and technologies and commercialize these in the market place. Firms appropriate
+returns from private investment in innovation through intellectual property rights. 
 
 \paragraph{Collective action model}
 Here the public a subsidizes the innovators who, in turn, contribute to a public goods innovation.
@@ -57,14 +63,17 @@ For example, a technology firm can commercialize and sell a product based on res
 
 \paragraph{Private-collection innovation}
 In absence of a public subsidy a private firm can still decide to invest private resources to create public goods innovations. 
-Such innovations are characterized by non-rivalry and non-exclusivityin consumption.
-Intellectual property rights are forfeited and the resulting innovation is offered tothe public for free.
+Such innovations are characterized by non-rivalry and non-exclusivity
+in consumption.
+Intellectual property rights are forfeited and the resulting innovation is offered to
+the public for free.
 
 
 \subsection{The subject of the study: Nokia Internet Tablet}
 
 The effects of the private-collective innovation model were studied in a single-case study following the development of the Nokia Internet Tablet.
-The study relied on semi-structured interviews, allowing participants the opportunityto narrate stories, provide anecdotes, and state opinions.
+The study relied on semi-structured interviews, allowing participants the opportunity
+to narrate stories, provide anecdotes, and state opinions.
 As a second data source the project's developer mailing list was analyzed to determine the activity and size of the community.
 
 \paragraph{Nokia's first steps}
@@ -80,7 +89,7 @@ At the same time Nokia decided not to distribute the device through mobile shops
 It was only available on Nokia's own website.
 
 \paragraph{The Maemo community}
-In 2005 Nokia consolidated their development efforts .
+In 2005 Nokia consolidated their development efforts.
 It launched the Maemo platform which provided the whole software stack for application development for the handheld device.
 This included the open source projects together with binary files that form the operating system and the software of the Internet Tablet.
 The platform code itself was open source and was maintained by the Maemo community.
@@ -235,40 +244,185 @@ Overall, the private-collective innovation model was attractive to Nokia as it k
 On balance, the benefits seemed to have outweighed the costs as one interviewee summarizes:
 
 \begin{quotation}
-Some people might say that one of the problemsis that you are leaking and giving outyour secrets and so forth, but it’s more like atrade-off. What is more important to you: togive some of your secrets an internal work-outor how much help in creating these productsyou get for free. I think, if you calculate, youare far more on the positive side when youdecide to share.
+Some people might say that one of the problems
+is that you are leaking and giving out
+your secrets and so forth, but it’s more like a
+trade-off. What is more important to you: to
+give some of your secrets an internal work-out
+or how much help in creating these products
+you get for free. I think, if you calculate, you
+are far more on the positive side when you
+decide to share.
 \end{quotation}
 
 On a side note, it is sad that the transcripts of the study's interviews are not available. Interesting questions to a Nokia manager included ``When do you do things internally?'' and  ``When do you decide to pay somebody for a certain development effort?''.
 
-\section{Paper: \citetitle{henkel2009champions}}
-\fullcite{henkel2009champions}
 
-\begin{itemize}
-\item the link between firms engaging in open source software (OSS) development and the OSS community is established by individual developers 
-\item double allegiance to firm and OSS community
-\item developers expose the firm to the risk of losing intellectual property
-\item study done using interviews and large-scale survey
-\item focus on potential principal-agent problems between developer and employer
-\item biggest problem for companies: the Free Software ideologist
-\end{itemize}
+\section{Paper: \citetitle{henkel2006selective}}
+
+\todo{\fullcite{henkel2006selective}}
+
+Was the Nokia case presented in the previous chapter unique? 
+\textcite{henkel2006selective} tried to find conditions across a host of companies under which the private-collective innovation model, he calls it \emph{selective revealing}, is feasible.
+The study is limited to companies developing embedded Linux systems.
+Not all companies have the freedom to decide on what to reveal.
+A lot of OSS development is governed by the General Public License (GPL) requiring the company to reveal derivative works.
+But what if  not all code is required to be revealed, what then are reasons for openness? 
+And further, if companies had to reveal code, what proportion was revealed and what type of code?
+
+\subsection{Study of Embedded Linux}
+
+Embedded Linux is one of three most widely used operating systems for embedded devices ranging from VCRs to mobile phones.
+These device types are so different from one to another that no standard version of embedded Linux exists.
+Instead, developing for embedded Linux refers to the activity of extending or writing modules that make Linux more suitable for the respective device type.
+If derived works in the sense of the GPL are produced in the process, their source code has to be revealed by the time the device comes to market.
+
+The study by \textcite{henkel2006selective} was done using a web based questionnaire, targeted only at embedded Linux developers and yielded 268 valid responses.
+Two out of five respondents indicated that they worked at a device manufacturer, one out of five said to be working for a software company specializing in software for embedded devices.
+
+
+\subsection{Ways to protect code based on OSS}
+
+Whether source code has to be released or not largely depends if it is based on software that was released under a license that forces it to be revealed, e.g. GPL.
+The source code of derived work based on GPL’ed software must be made available to all receivers of the software. 
+In the case of embedded Linux this means that when a device comes to market, any buyer is entitled to obtain the source code.
+
+\paragraph{Upon request only}
+However, the source code does not have to be shipped with the product, instead, only be made available upon request.
+Furthermore, if the software is only used within the company or the customer decides not to request the sources, the code will stay secret.
+There is no section in the GPL requiring a company to make the code public.
+The firms are well aware if this fact so that, according to the study, almost half of the respondents choose to reveal code only to the customers.
+
+\paragraph{Lead time}
+Licenses like the GPL require the revelation of source code only on distribution. 
+For products that have a long development cycle this means the code only has to be released once the development has been completed, giving it a considerable \emph{lead time}.
+45 \% of respondents follow this approach.
+
+\paragraph{Software architecture}
+Depending on the licenses and the nature of OSS reuse as either a component, a module, a library, a driver, a separate program, etc. modifications have to be made available upon distribution.
+There is a long discussion going on about what counts as a modification of a software licensed under the GPL.
+For example, reusing a GPL'ed library puts the whole program under GPL because when it is run it includes the library code.
+Other OSS licenses do not have this restriction, e.g. the Lesser General Public License (LGPL) imposes its copyleft restrictions only on the software itself, say a library, and not on programs that link against it.
+After carefully considering all licenses of the reused software, a redesign of the code architecture allows to shift functionalities that require protection to either a very low or a high application layer.
+Nokia followed exactly this approach.
+
+\subsection{Share of revealed code}
+
+Asked what share of code that could potentially be useful to others is being revealed, hobbyists and developers at universities led the field with a sharing 92\% of their code. 
+For commercial firms, the revealing behavior varies strongly, sharing 49\% of their code but showing a standard deviation of 35\%, a minimum of 1\% and a maximum of 100\%.
+
+In addition, sharing seems to have become more common over time as 49\% of all respondents said they reveal more than they did in 2000.
+Firms seem to appreciate the benefits that Nokia experienced while at the same time having become more skilled in devising an architecture that allows for selective revealing.
+
+\subsection{Types revealed code}
+
+The questionnaire asked if companies shared code of the following types: 
+\begin{description}
+\item[Generic, other companies may use it] 63\% of hardware firms agreed, 85\% of software firms
+\item[Important for the companies competitive position] net agreement to share was only reported by software firms: 27\%.
+\item[Differentiates the product] same as above (30\% of software firms), probably when it wants to create demand for related services or signal the firm's competence in the field
+\item[Specific to our hardware] net agreement for hardware firms is 34.5\%, probably also aimed at supporting the development of complementary products to the hardware 
+\item[Specific to our application software] still considerable at 28.6\%
+\end{description}
+
+An open question to classify the revealed code yielded the following quotes stressing economical reasoning and lead time:
+\begin{quote}
+``[We reveal code] where the cost of support is more then the profit made on sales. We then give it out without support.''
+\end{quote}
+\begin{quote}
+``Anything that will not give our competitors the possibility to copy our products one to one in a short time.''
+\end{quote}
+
+\subsection{Reasons to reveal}
+
+Agreement on the twelve offered reasons to reveal code differed between hardware and software firms:
+
+\paragraph{Hardware firms}
+The main reason to reveal is clearly ``because the GPL requires it''.
+Of all the 12 offered reasons, rank 2 was claimed by ``to appear as a good OSS player'' which is considered a basis for reasons ranked 3--5:  bug fixes by others, further development by others, and reduced maintenance effort.
+The high rank of these three confirms that firms do perceive technical benefits from the open source development process in embedded Linux, and are willing to share their code with others in order to realize these benefits.
+After rank 5 the level of agreement drops sharply.
+
+\paragraph{Software firms}
+Marketing reasons ranked much higher: ``revealing good code improves our company’s technical reputation'' ranked third while ``visibility on the mailing list is good marketing'' ranked 6.
+\citeauthor{henkel2006selective} explains that software firms often act as suppliers to hardware manufacturers, performing commissioned development and therefor want to be perceived as experts in the field.
+
+\subsection{Revealing behavior}
+A multivariate analysis was done to show if revealing behavior is dependent on certain company characteristics:
+
+\paragraph{Firm size}
+The share of code that is revealed is larger the smaller the firm.
+This is consistent with the view that a small firm, due to resource scarcity, is expected to benefit more from external development support.
+
+\paragraph{Firm policies}
+The analysis could not confirm that firms that encourage their developers to reveal non-critical parts of the code do reveal more.
+This is quite odd. 
+It suggests that the developers seem to act independent of the presence of such a policy.
+On the other hand, firms that have restricting policies and gave reasons to reveal---e.g. external development support, reputation and marketing---do not reveal significantly less suggesting that policies are mostly informed by these reasons.
+
+\paragraph{Complementary assets}
+Device manufacturers reveal significantly less than software firms.
+The manufacturers' devices do not seem to constitute a sufficiently protective complementary asset.
+However component manufacturers reveal more, probably related to the drivers that will enable other companies to develop assets.
+
+\paragraph{Familiarity with embedded Linux}
+The longer a company has been developing for embedded Linux the bigger the share of revealed code.
+
+\paragraph{Reasons for sharing more: Development support and reputation}
+Companies that consider either of these reasons important, clearly share more code.
+
+\paragraph{Reasons for not sharing more: Marketing and the GPL}
+Companies that reveal code for marketing reasons do not share more.
+An explanation could be that they do not share more in quantity but make what they share more visible.
+
+Companies that give the GPL as an important reason to reveal code, do not share more. 
+These companies seem to be reluctant to share code in the first place and only do so when compelled to by a license.
+
+
+\subsection{Summary}
+
+For a long time, efforts to profit from innovation focussed on exclusivity, i.e. the protection of innovation.
+Instead, \citeauthor{henkel2006selective} suggests, companies should focus on the appropriation of profits from innovation itself.
+The rise of OSS has shown that freely revealing one’s developments may be a sensible thing to do, in particular when community-based development is viable.
+This is favored when, as for embedded Linux, needs are strongly heterogeneous and the underlying technology is highly modular.
+
+On the other hand, developing OSS does not imply free revealing.
+Commercial OSS development offers means to protect parts of one's own code, allowing for selective revealing.
+Across the sample of firms, on average about half the code developed for embedded Linux was being revealed while the other half remained protected.
+The share of revealed code was, other things being equal, higher for small firms, component manufacturers and firms experienced in OSS development.
+
+Among the reasons to reveal, informal outside development support in the form of bug fixes, code improvement, and code maintenance figures prominently, and turns out to be a significant driver of revealing.
+
+\section{Conclusion}
+
+Nokia is indeed not alone in its application of the private-collective investment model of innovation.
+Both papers support the view that the model works well for commercial products that have a narrow focus and are very distinct from one another.
+Embedded devices show exactly this wide variety.
+As a result, enlisting the help of the community does not seem to lead to a competitive disadvantage.
+
+Firms are deriving technical benefits from revealing code or ``officially'' enlisting the help of the FLOSS community as Nokia did.
+The benefits include higher software quality through reuse, lower development cost and the fostering of complementary asset development as in the Maemo community.
+For Nokia and the majority of companies in the sample in \textcite{henkel2006selective} the private-collective model of innovation seemed to work.
+
 
 \section{Presentation}
 
 The presentation will follow the outline of this document by using the development of the tablet as a story thread.
 
 \begin{itemize}
-\item introducing the tablet
+\item introducing the Nokia Internet Tablet
 \item introduce innovation models
 \item describe study/interviews, why was the Internet Tablet development a case in point
 \item present benefits, costs, strategies to mitigate costs, peppered with anecdotes from the tablet development
 \item sum up how the application of the model worked out for Nokia
-\item wonderings about detailed answers to questions about the internal/external collaboration lead to the second paper: the individual programmer as bridge between two worlds
-\item introduce topic, actors, principles (e.g. ``Free Software ideology'')
-\item bring attention to principal-agent problems (information asymmetry and potentially diverging interests)
-\item describe study/interviews, why was the product a suitable subject
-\item present findings: revealing code may be in firm's best interest, management overestimates the risk and underestimates the benefits of openness
+\item what about other companies? introduce 2nd paper by Henkel
+\item present study with goal to find conditions under which application of the model is feasible
+\item generalize Nokia's approach of protecting some parts of the software
+\item present most important licenses (GPL, LGPL, BSD, MIT, etc.) and how they affect revealing vs. protecting, lead time and software architecture
+\item present findings: share of code, types of code, reasons to reveal
+\item present company characteristics and reasons that lead to adoption of the model/revealing
+\item close with summary of benefits and costs and strategies to mitigate these
 \end{itemize}
-
 
 \printbibliography[keyword=innovation]
 
